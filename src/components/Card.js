@@ -29,10 +29,10 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
   const classes = useStyles();
 
   return (
-    <Card elevation={0} classes={{ root: classes.card }}>
+    <Card elevation={3} classes={{ root: classes.card }}>
       <Img
         fluid={featuredImage.childImageSharp.fluid}
-        style={{ borderRadius: 2 }}
+        style={{ borderRadius: 0 }}
       />
       <CardContent classes={{ root: classes.cardContent }}>
         <Typography
@@ -64,7 +64,7 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
         </Typography>
       </CardContent>
       <CardActions classes={{ root: classes.cardActions }}>
-        <Button component={Link} to={url} variant="outlined" color="secondary">
+        <Button component={Link} to={url} color="secondary" >
           Read More
         </Button>
       </CardActions>

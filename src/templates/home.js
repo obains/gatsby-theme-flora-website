@@ -19,10 +19,7 @@ const Posts = ({ posts, pathPrefix }) => {
           }
         }) => {
           const postDate = path
-            .basename(fileAbsolutePath)
-            .split("-")
-            .splice(0, 3)
-            .join(" ");
+            .basename(fileAbsolutePath);
           return (
             <Grid item xs={12} sm={4} key={id}>
               <Card
@@ -98,11 +95,15 @@ export default function HomeTemplate({
             <Box
               display="flex"
               justifyContent="flex-end"
-              padding={1}
+              padding={3}
               marginTop={1}
             >
               <Button
                 variant="contained"
+                outlined={
+                  theme.palette.type === 'light' ? 'rgba(0, 0, 0, 0)' : 'rgba(255, 255, 255, 0.23)'}
+                borderRadius={
+                  theme.shape.borderRadius = "0%" }
                 color="secondary"
                 component={Link}
                 to={`/${pathPrefix}/page/1`}
@@ -137,7 +138,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 100)
           fileAbsolutePath
           frontmatter {
             id

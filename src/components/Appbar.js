@@ -16,9 +16,11 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(1)
   },
   titleButton: {
-    padding: theme.spacing(1.5),
+    padding: theme.spacing(2),
+    minWidth: 100,
     borderRadius: "0px",
     transition: "background-color .125s ease",
+    fontSize: theme.typography.pxToRem(18),
     "&:hover": {
       backgroundColor: "rgba(0,0,0,0.1)"
     },
