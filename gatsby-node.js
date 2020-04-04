@@ -100,7 +100,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       const postDate = path
         .basename(node.fileAbsolutePath)
         .split("-")
-        .splice(0, 3)
+        .splice(0)
         .join("-");
 
       // The path to the previous page.

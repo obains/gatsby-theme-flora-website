@@ -19,7 +19,10 @@ const Posts = ({ posts, pathPrefix }) => {
           }
         }) => {
           const postDate = path
-            .basename(fileAbsolutePath);
+            .basename(fileAbsolutePath)
+            .split(".")
+            .splice(0,1)
+            .join(" ");
           return (
             <Grid item xs={12} sm={4} key={id}>
               <Card

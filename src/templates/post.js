@@ -52,7 +52,7 @@ export default function PostTemplate({ data, pageContext }) {
   const classes = useStyles();
   const { mdx } = data;
   const {
-    frontmatter: { featuredImage, title, tags },
+    frontmatter: { coverImage, title, tags },
     body
   } = mdx;
   const { previousPath, nextPath, postDate } = pageContext;
@@ -77,8 +77,9 @@ export default function PostTemplate({ data, pageContext }) {
             <Tags tags={tags} />
           </Box>
           <Img
-            fluid={featuredImage.childImageSharp.fluid}
+            fluid={coverImage.childImageSharp.fluid}
             style={{ borderRadius: 2 }}
+            style={{ height: 400 }} // define height of image 
           />
           <article className={classes.article}>
             <MDXRenderer>{body}</MDXRenderer>
@@ -123,7 +124,7 @@ export const pageQuery = graphql`
         id
         title
         tags
-        featuredImage {
+        coverImage {
           childImageSharp {
             fluid(maxWidth: 1280) {
               ...GatsbyImageSharpFluid
