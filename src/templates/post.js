@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import moment from "moment";
 import { Box, Button, Chip, Typography } from "@material-ui/core";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import theme from "../style/theme";
 
 const useStyles = makeStyles(() => ({
   article: {
@@ -33,7 +34,7 @@ const Tags = ({ tags }) => {
       {tags.map(tag => {
         return (
           <Chip
-            color="primary"
+            color="secondary"
             variant="outlined"
             classes={{ root: classes.chip }}
             label={tag}
@@ -52,10 +53,11 @@ export default function PostTemplate({ data, pageContext }) {
   const classes = useStyles();
   const { mdx } = data;
   const {
-    frontmatter: { coverImage, title, tags },
+    frontmatter: { coverImage, title, subtitleCaption, tags },
     body
   } = mdx;
   const { previousPath, nextPath, postDate } = pageContext;
+
 
   return (
     <Layout>
@@ -72,12 +74,12 @@ export default function PostTemplate({ data, pageContext }) {
               {title}
             </Typography>
             <Typography variant="body2">
-              {postDate}
-            </Typography>
+              {subtitleCaption}
+            </Typography>          
             <Tags tags={tags} />
-          </Box>
+          </Box>    
           <Img
-            fluid={coverImage.childImageSharp.fluid}
+            fluid={coverImage.childImageSharp.fluid} // add in the postDate if required
             style={{ borderRadius: 2 }}
             style={{ height: 400 }} // define height of image 
           />
@@ -90,11 +92,13 @@ export default function PostTemplate({ data, pageContext }) {
                 <Button
                   component={Link}
                   to={previousPath}
+                  borderRadius={ theme.shape.borderRadius = "0%" }
                   variant="outlined"
                   color="secondary"
                 >
                   <FaChevronLeft size={8} />
                   <Box marginLeft={0.5}>Previous</Box>
+                  
                 </Button>
               )}
             </Box>
@@ -104,6 +108,7 @@ export default function PostTemplate({ data, pageContext }) {
                 to={nextPath}
                 variant="outlined"
                 color="secondary"
+                borderRadius={ theme.shape.borderRadius = "0%" }
               >
                 <Box marginRight={0.5}>Next</Box>
                 <FaChevronRight size={8} />
@@ -123,6 +128,7 @@ export const pageQuery = graphql`
       frontmatter {
         id
         title
+        subtitleCaption
         tags
         coverImage {
           childImageSharp {

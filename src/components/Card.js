@@ -33,7 +33,7 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
       <Img
         fluid={featuredImage.childImageSharp.fluid}        
         style={{ borderRadius: 0 }}
-        style={{ height: 400 }}
+        style={{ height: 280 }}
       />
       <CardContent classes={{ root: classes.cardContent }}>
         <Typography
