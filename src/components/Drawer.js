@@ -63,7 +63,7 @@ export default ({ open, onClose }) => {
 					<Box display="flex" flexDirection="column" padding={1}>
 						<Box display="flex" alignItems="center">
 							<Box flexGrow={1} paddingLeft={1}>
-								<Typography color='textSecondary' variant="h6" style={{ fontFamily: "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif" }}>
+								<Typography color='textSecondary' variant="h6">
 									{title}
 								</Typography>
 							</Box>

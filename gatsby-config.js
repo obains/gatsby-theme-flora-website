@@ -28,12 +28,15 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: "Roboto"
+            family: "Noto Sans JP" // change from Roboto
           },
           {
-            family: "Work Sans",
-            variants: ["800"]
+            family: "Noto Sans" // change from Roboto
           }
+          //{
+          //  family: "Work Sans",
+          //  variants: ["800"]
+          //}
         ]
       }
     }

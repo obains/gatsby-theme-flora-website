@@ -42,8 +42,8 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
           style={{
             marginBottom: 0,
             fontWeight: 600,
-            fontFamily:
-              "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif",
+            //fontFamily:
+            //  "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif",
             lineHeight: 1.25
           }}
         >
@@ -59,7 +59,7 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
           variant="subtitle2"
           color="textSecondary"
           component="p"
-          style={{ fontFamily: "Merriweather, Georgia, serif" }}
+          //style={{ fontFamily: "Merriweather, Georgia, serif" }}
         >
           {excerpt}
         </Typography>

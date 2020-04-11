@@ -20,15 +20,16 @@ const useStyles = makeStyles(theme => ({
     minWidth: 100,
     borderRadius: "0px",
     transition: "background-color .125s ease",
+    fontFamily: "Noto Sans JP",
     fontSize: theme.typography.pxToRem(18),
     "&:hover": {
       backgroundColor: "rgba(0,0,0,0.1)"
     },
-    "&:first-child": {
+//    "&:first-child": {
       // Site title.
-      fontFamily:
-        "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif"
-    }
+//      fontFamily:
+//        "Noto Sans JP, sans-serif"
+//    }
   }
 }));
 

@@ -68,7 +68,7 @@ export default function TagTemplate({
                 style={{
                   fontWeight: "bold",
                   fontFamily:
-                    "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif",
+                    "Noto Sans JP",
                   marginBottom: 4,
                   textDecoration: "none"
                 }}

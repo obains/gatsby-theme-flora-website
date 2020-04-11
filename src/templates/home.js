@@ -79,7 +79,7 @@ export default function HomeTemplate({
               style={{
                 fontWeight: "bold",
                 fontFamily:
-                  "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif",
+                  "Noto Sans", // was Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
                 marginBottom: 4
               }}
             >

@@ -19,5 +19,11 @@ export default createMuiTheme({
     success: {
       main: "#28a745"
     }
-  }
+  },
+  typography: {
+    fontFamily: [
+      '"Noto Sans JP"',
+      '"Noto Sans',
+    ].join(','),
+  }, // all above section was changed
 });

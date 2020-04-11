@@ -36,7 +36,7 @@ export default function PageTemplate({ data }) {
               variant="h4"
               style={{
                 fontFamily:
-                  "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif"
+                  "Noto Sans JP"
               }}
             >
               {title}
