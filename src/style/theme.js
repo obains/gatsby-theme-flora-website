@@ -23,7 +23,7 @@ export default createMuiTheme({
   typography: {
     fontFamily: [
       '"Noto Sans JP"',
-      '"Noto Sans',
+      '"Noto Sans"',
     ].join(','),
-  }, // all above section was changed
+  },
 });
