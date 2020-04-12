@@ -12,7 +12,7 @@ import theme from "../style/theme";
 const useStyles = makeStyles(() => ({
   article: {
     lineHeight: 1.6,
-    fontFamily: "Noto Sans JP",
+    fontFamily: "Heebo",
     fontSize: "1.1rem",
     "& blockquote": {
       borderLeft: "3px solid #303032",

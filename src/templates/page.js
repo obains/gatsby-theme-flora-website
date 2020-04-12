@@ -36,7 +36,7 @@ export default function PageTemplate({ data }) {
               variant="h4"
               style={{
                 fontFamily:
-                  "Noto Sans JP"
+                  "Heebo"
               }}
             >
               {title}

@@ -41,15 +41,19 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
           variant="h6"
           style={{
             marginBottom: 0,
-            fontWeight: 600,
-            //fontFamily:
-            //  "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif",
-            lineHeight: 1.25
+            fontWeight: 1000,
+            fontFamily: "Heebo",
+            lineHeight: 1.3
           }}
         >
           {title}
         </Typography>
-        <Typography variant="caption" color="textSecondary">
+        <Typography variant="caption" color="textSecondary" style={{
+            marginBottom: 0,
+            fontWeight: 400,
+            fontSize: "0.8rem",
+            fontFamily: "Heebo"
+          }}>
           {postDate}
         </Typography>
         <Box marginY={1}>
@@ -59,7 +63,10 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
           variant="subtitle2"
           color="textSecondary"
           component="p"
-          //style={{ fontFamily: "Merriweather, Georgia, serif" }}
+          style={{ 
+            fontFamily: "Heebo",
+            fontSize: "0.9rem" 
+          }}
         >
           {excerpt}
         </Typography>

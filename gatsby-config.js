@@ -28,11 +28,11 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: "Noto Sans JP" // change from Roboto
-          },
-          {
-            family: "Noto Sans" // change from Roboto
-          }
+            family: "Heebo" // change from Roboto
+          }//,
+          //{
+          //  family: "Noto Sans" // change from Roboto
+          //}
           //{
           //  family: "Work Sans",
           //  variants: ["800"]

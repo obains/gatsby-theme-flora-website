@@ -44,7 +44,7 @@ export default function HomeTemplate({
   data: {
     site: {
       siteMetadata: {
-        title,
+        subtitle,
         description,
         templates: {
           posts: { pathPrefix }
@@ -78,12 +78,13 @@ export default function HomeTemplate({
               variant="h2"
               style={{
                 fontWeight: "bold",
+                fontSize: "4rem",
                 fontFamily:
-                  "Noto Sans", // was Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
+                  "Heebo", // was Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
                 marginBottom: 4
               }}
             >
-              {title}
+              {subtitle}
             </Typography>
             <Typography color="inherit" variant="body1">
               {description}
@@ -125,7 +126,7 @@ export const pageQuery = graphql`
   query($limit: Int!) {
     site {
       siteMetadata {
-        title
+        subtitle
         description
         templates {
           posts {

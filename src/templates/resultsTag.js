@@ -71,7 +71,7 @@ export default function ResultsTagTemplate({
                 style={{
                   fontWeight: "bold",
                   fontFamily:
-                    "Noto Sans JP",
+                    "Heebo",
                   marginBottom: 4,
                   textDecoration: "none"
                 }}

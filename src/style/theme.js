@@ -22,8 +22,7 @@ export default createMuiTheme({
   },
   typography: {
     fontFamily: [
-      '"Noto Sans JP"',
-      '"Noto Sans"',
+      '"Heebo"'
     ].join(','),
   },
 });
