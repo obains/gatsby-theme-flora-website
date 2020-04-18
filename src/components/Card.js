@@ -43,8 +43,8 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
           variant="h6"
           style={{
             marginBottom: 0,
-            fontWeight: 1000,
-            fontFamily: "Heebo",
+            fontWeight: "bold",
+            fontFamily: "Oswald",
             lineHeight: 1.3
           }}
         >

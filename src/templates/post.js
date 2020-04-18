@@ -67,8 +67,8 @@ export default function PostTemplate({ data, pageContext }) {
             <Typography
               variant="h4"
               style={{
-                fontFamily:
-                  "Heebo"
+                fontWeight: "bold",
+                fontFamily: "Oswald"
               }}
             >
               {title}

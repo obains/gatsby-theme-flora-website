@@ -9,8 +9,8 @@ import { Box, Typography } from "@material-ui/core";
 const useStyles = makeStyles(() => ({
   article: {
     lineHeight: 1.6,
-    fontFamily: "Merriweather, Georgia, serif",
-    fontSize: "1.5rem",
+    fontFamily: "Heebo",
+    fontSize: "1.1rem",
     "& blockquote": {
       borderLeft: "3px solid #303032",
       marginLeft: -16,
@@ -35,8 +35,8 @@ export default function PageTemplate({ data }) {
             <Typography
               variant="h4"
               style={{
-                fontFamily:
-                  "Heebo"
+                fontWeight: "bold",
+                fontFamily: "Oswald"
               }}
             >
               {title}
@@ -45,6 +45,7 @@ export default function PageTemplate({ data }) {
           <Img
             fluid={featuredImage.childImageSharp.fluid}
             style={{ borderRadius: 2 }}
+            style={{ height: 300}} // define height of image 
           />
           <article className={classes.article}>
             <MDXRenderer>{body}</MDXRenderer>
@@ -62,6 +63,7 @@ export const pageQuery = graphql`
       frontmatter {
         id
         title
+        tags
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 1280) {

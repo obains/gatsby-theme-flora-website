@@ -72,15 +72,16 @@ export default function HomeTemplate({
             "-webkit-clip-path": "polygon(0 0, 100% 60, 100% 0%, 0% 100%)"
           }}
         >
-          <Box marginBottom={4}>
+          <Box flexGrow={1} marginX={"auto"} width="90%" marginBottom={4} marginTop={2}> 
             <Typography
-              color="inherit"
+              color="inherit" // the above paramaters fiddle with the title size. delete everything apart from marginBottom={4}
               variant="h2"
               style={{
                 fontWeight: "bold",
-                fontSize: "4rem",
+                position: "center",
+                fontSize: "2rem",
                 fontFamily:
-                  "Heebo", // was Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
+                  "Oswald", // was Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
                 marginBottom: 4
               }}
             >
@@ -137,7 +138,7 @@ export const pageQuery = graphql`
     }
     allMdx(
       filter: { fileAbsolutePath: { regex: "/content/posts/" } }
-      sort: { order: DESC, fields: [fileAbsolutePath] }
+      sort: { order: ASC, fields: [fileAbsolutePath] }
       limit: $limit
     ) {
       edges {
