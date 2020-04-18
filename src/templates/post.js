@@ -34,7 +34,7 @@ const Tags = ({ tags }) => {
       {tags.map(tag => {
         return (
           <Chip
-            color="secondary"
+            color="default"
             variant="outlined"
             classes={{ root: classes.chip }}
             label={tag}
@@ -68,7 +68,7 @@ export default function PostTemplate({ data, pageContext }) {
               variant="h4"
               style={{
                 fontFamily:
-                  "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif"
+                  "Heebo"
               }}
             >
               {title}
@@ -81,7 +81,7 @@ export default function PostTemplate({ data, pageContext }) {
           <Img
             fluid={coverImage.childImageSharp.fluid} // add in the postDate if required
             style={{ borderRadius: 2 }}
-            style={{ height: 400 }} // define height of image 
+            style={{ height: 300}} // define height of image 
           />
           <article className={classes.article}>
             <MDXRenderer>{body}</MDXRenderer>

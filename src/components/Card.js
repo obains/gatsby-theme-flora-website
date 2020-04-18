@@ -29,13 +29,15 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
   const classes = useStyles();
 
   return (
-    <Card elevation={3} classes={{ root: classes.card }}>
+    <Card elevation={5} classes={{ root: classes.card }}>
       <Img
         fluid={featuredImage.childImageSharp.fluid}        
         style={{ borderRadius: 0 }}
         style={{ height: 280 }}
       />
-      <CardContent classes={{ root: classes.cardContent }}>
+      <CardContent classes={{ root: classes.cardContent }}
+        style={{ height: 150 }}
+      >
         <Typography
           gutterBottom
           variant="h6"

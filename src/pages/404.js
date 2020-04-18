@@ -15,7 +15,7 @@ export default function Error404Template() {
           paddingX={8}
           style={{
             backgroundColor: theme.palette.primary.main,
-            color: theme.palette.common.white
+            color: theme.palette.common.black
           }}
         >
           <Box marginBottom={4}>
@@ -25,14 +25,14 @@ export default function Error404Template() {
               style={{
                 fontWeight: "bold",
                 fontFamily:
-                  "Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif",
+                  "Heebo",
                 marginBottom: 4
               }}
             >
               404 Error
             </Typography>
             <Typography color="inherit" variant="body1">
-              The requested page was not found.
+              The requested page was not found. Please try again. 
             </Typography>
           </Box>
         </Box>
