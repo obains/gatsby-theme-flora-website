@@ -23,22 +23,5 @@ module.exports = {
         path: `src/content/posts`
       }
     },
-    {
-      resolve: "gatsby-plugin-prefetch-google-fonts",
-      options: {
-        fonts: [
-          {
-            family: "Heebo" // change from Roboto
-          }//,
-          //{
-          //  family: "Noto Sans" // change from Roboto
-          //}
-          //{
-          //  family: "Work Sans",
-          //  variants: ["800"]
-          //}
-        ]
-      }
-    }
   ]
 };
