@@ -7,12 +7,7 @@ import Link from "../components/Link";
 const useStyles = makeStyles(theme => ({
   footer: {
     color: theme.palette.common.white,
-    backgroundColor: theme.palette.grey[900],
-    "& a": {
-      color: theme.palette.grey[300],
-      textDecoration: "none",
-      fontSize: ".9rem"
-    },
+    backgroundColor: theme.palette.primary.main,   
     "& a:hover": {
       textDecoration: "underline"
     },

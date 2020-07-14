@@ -67,7 +67,7 @@ export default function HomeTemplate({
           paddingX={8}
           style={{
             backgroundColor: theme.palette.primary.main,
-            color: theme.palette.common.black,
+            color: theme.palette.common.white,
             clipPath: "rectangle(0 0, 100% 60, 100% 0%, 0% 100%)",
             "-webkit-clip-path": "polygon(0 0, 100% 60, 100% 0%, 0% 100%)"
           }}
