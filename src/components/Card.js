@@ -43,8 +43,8 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
           variant="h6"
           style={{
             marginBottom: 0,
-            fontWeight: "bold",
-            fontFamily: "Oswald",
+            fontWeight: "500",
+            fontFamily: '"Mulish"',
             lineHeight: 1.3
           }}
         >
@@ -53,8 +53,8 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
         <Typography variant="caption" color="textSecondary" style={{
             marginBottom: 0,
             fontWeight: 400,
-            fontSize: "0.8rem",
-            fontFamily: "Heebo"
+            fontSize: "0.9rem",
+            fontFamily: "Mulish"
           }}>
           {postDate}
         </Typography>
@@ -66,7 +66,7 @@ export default ({ featuredImage, title, postDate, excerpt, url }) => {
           color="textSecondary"
           component="p"
           style={{ 
-            fontFamily: "Heebo",
+            fontFamily: "Mulish",
             fontSize: "0.9rem" 
           }}
         >

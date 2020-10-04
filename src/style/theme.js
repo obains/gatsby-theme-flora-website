@@ -3,7 +3,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 export default createMuiTheme({
   palette: {
     primary: {
-      main: "#2E5489"
+      main: "#5c76a1" // #7285A5
     },
     secondary: {
       main: "#000000"
@@ -20,9 +20,10 @@ export default createMuiTheme({
       main: "#28a745"
     }
   },
-  typography: {
+    typography: {
     fontFamily: [
-      '"Heebo"'
+    'Mulish',
     ].join(','),
   },
 });
+

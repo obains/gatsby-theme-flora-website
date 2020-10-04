@@ -12,7 +12,7 @@ import theme from "../style/theme";
 const useStyles = makeStyles(() => ({
   article: {
     lineHeight: 1.6,
-    fontFamily: "Heebo",
+    fontFamily: "Mulish",
     fontSize: "1.1rem",
     "& blockquote": {
       borderLeft: "3px solid #303032",
@@ -68,7 +68,7 @@ export default function PostTemplate({ data, pageContext }) {
               variant="h4"
               style={{
                 fontWeight: "bold",
-                fontFamily: "Oswald"
+                fontFamily: "Mulish"
               }}
             >
               {title}

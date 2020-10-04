@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     minWidth: 100,
     borderRadius: "0px",
     transition: "background-color .125s ease",
-    fontFamily: "Heebo",
+    fontFamily: '"Mulish"',
     fontSize: theme.typography.pxToRem(18),
     "&:hover": {
       backgroundColor: "rgba(0,0,0,0.1)"

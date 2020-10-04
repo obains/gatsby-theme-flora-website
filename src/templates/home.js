@@ -77,11 +77,12 @@ export default function HomeTemplate({
               color="inherit" // the above paramaters fiddle with the title size. delete everything apart from marginBottom={4}
               variant="h2"
               style={{
-                fontWeight: "bold",
                 position: "center",
-                fontSize: "2rem",
+                fontSize: "3rem",
+                fontWeight: "500",
+                letterSpacing: 2.5,
                 fontFamily:
-                  "Oswald", // was Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
+                  'Mulish', // was Work Sans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
                 marginBottom: 4
               }}
             >
@@ -143,7 +144,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 100)
+          excerpt(pruneLength: 80)
           fileAbsolutePath
           frontmatter {
             id

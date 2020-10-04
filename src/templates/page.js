@@ -9,7 +9,7 @@ import { Box, Typography } from "@material-ui/core";
 const useStyles = makeStyles(() => ({
   article: {
     lineHeight: 1.6,
-    fontFamily: "Heebo",
+    fontFamily: "Mulish",
     fontSize: "1.1rem",
     "& blockquote": {
       borderLeft: "3px solid #303032",
@@ -36,17 +36,12 @@ export default function PageTemplate({ data }) {
               variant="h4"
               style={{
                 fontWeight: "bold",
-                fontFamily: "Oswald"
+                fontFamily: "Mulish"
               }}
             >
               {title}
             </Typography>
           </Box>
-          <Img
-            fluid={featuredImage.childImageSharp.fluid}
-            style={{ borderRadius: 2 }}
-            style={{ height: 300}} // define height of image 
-          />
           <article className={classes.article}>
             <MDXRenderer>{body}</MDXRenderer>
           </article>

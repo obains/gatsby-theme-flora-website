@@ -1,9 +1,30 @@
 {
-  "name": "gatsby-theme-flora-website",
-  "version": "2.3.2",
-  "main": "index.js",
+  "_from": "gatsby-theme-flora-website@^2.3.2",
+  "_inBundle": false,
+  "_integrity": "sha512-9XE2UJhFsumg4JxO4XwywcFv5Q1vUREb4jxOKRHsWPWbGKzZW+9QBZCfmyZVOfrobvAupXd7TKjJ7mo9EtpIuA==",
+  "_location": "/gatsby-theme-flora-website",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "gatsby-theme-flora-website@^2.3.2",
+    "name": "gatsby-theme-flora-website",
+    "escapedName": "gatsby-theme-flora-website",
+    "rawSpec": "^2.3.2",
+    "saveSpec": null,
+    "fetchSpec": "^2.3.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/gatsby-theme-flora-website/-/gatsby-theme-flora-website-2.3.2.tgz",
+  "_shasum": "946dc572e4f4e1ac7182655ce16667425271422d",
+  "_spec": "gatsby-theme-flora-website@^2.3.2",
+  "_where": "/home/ollie/Documents/flora/website_production",
   "author": "Ollie Bains @obains",
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/obains/flora-website/issues"
+  },
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@mdx-js/mdx": "^1.5.1",
@@ -22,22 +43,24 @@
     "react-icons": "^3.8.0",
     "yarn": "^1.22.0"
   },
+  "deprecated": false,
+  "description": "Ollie's theme for Flora's website",
+  "devDependencies": {},
+  "homepage": "https://github.com/obains/flora-websitee#readme",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
     "gatsby-theme"
   ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "gatsby-theme-flora-website",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/obains/flora-website.git"
   },
-  "bugs": {
-    "url": "https://github.com/obains/flora-website/issues"
-  },
-  "homepage": "https://github.com/obains/flora-websitee#readme",
-  "description": "Ollie's theme for Flora's website",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {}
+  "version": "2.3.3"
 }
