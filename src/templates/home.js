@@ -139,7 +139,7 @@ export const pageQuery = graphql`
     }
     allMdx(
       filter: { fileAbsolutePath: { regex: "/content/posts/" } }
-      sort: { order: ASC, fields: [fileAbsolutePath] }
+      sort: { order: DESC, fields: [fileAbsolutePath] }
       limit: $limit
     ) {
       edges {
