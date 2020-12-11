@@ -8,8 +8,17 @@ const useStyles = makeStyles(theme => ({
   footer: {
     color: theme.palette.common.white,
     backgroundColor: theme.palette.primary.main,   
+    "& a:link": {
+      textDecoration: "underline",
+      color: "white"
+    },
+    "& a:visited": {
+      textDecoration: "underline",
+      color: "white"
+    },
     "& a:hover": {
-      textDecoration: "underline"
+      textDecoration: "underline",
+      color: "white"
     },
     "& ul": {
       padding: 0,
@@ -67,6 +76,10 @@ export default () => {
                 <Box textAlign="center" marginTop={2}>
                   <Typography variant="caption">
                     &copy; {new Date().getFullYear()} {copyright}
+                  </Typography>
+                  <br/>
+                  <Typography variant="caption">
+                    Tech by: <a color="primary" href='https://github.com/obains' target="_blank">@obains</a>
                   </Typography>
                 </Box>
               </Box>
