@@ -1,43 +1,47 @@
 {
-  "_from": "gatsby-theme-flora-website@^2.3.2",
+  "_from": "gatsby-theme-flora-website@^2.3.6",
+  "_id": "gatsby-theme-flora-website@2.3.6",
   "_inBundle": false,
-  "_integrity": "sha512-9XE2UJhFsumg4JxO4XwywcFv5Q1vUREb4jxOKRHsWPWbGKzZW+9QBZCfmyZVOfrobvAupXd7TKjJ7mo9EtpIuA==",
+  "_integrity": "sha512-XuUyEcgX280uf5DolFAgfZp0sruoGxZo1G6Je53kfZRhgprszy4Vw204/kltVvc7IGc3KIUTdxpxRW7mTWHLhA==",
   "_location": "/gatsby-theme-flora-website",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "gatsby-theme-flora-website@^2.3.2",
+    "raw": "gatsby-theme-flora-website@^2.3.6",
     "name": "gatsby-theme-flora-website",
     "escapedName": "gatsby-theme-flora-website",
-    "rawSpec": "^2.3.2",
+    "rawSpec": "^2.3.6",
     "saveSpec": null,
-    "fetchSpec": "^2.3.2"
+    "fetchSpec": "^2.3.6"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/gatsby-theme-flora-website/-/gatsby-theme-flora-website-2.3.2.tgz",
-  "_shasum": "946dc572e4f4e1ac7182655ce16667425271422d",
-  "_spec": "gatsby-theme-flora-website@^2.3.2",
+  "_resolved": "https://registry.npmjs.org/gatsby-theme-flora-website/-/gatsby-theme-flora-website-2.3.6.tgz",
+  "_shasum": "006a9a38fb59be4a27a1fcea2a48e366988ca046",
+  "_spec": "gatsby-theme-flora-website@^2.3.6",
   "_where": "/home/ollie/Documents/flora/website_production",
-  "author": "Ollie Bains @obains",
+  "author": {
+    "name": "Ollie Bains @obains"
+  },
   "bugs": {
     "url": "https://github.com/obains/flora-website/issues"
   },
+  "bundleDependencies": false,
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
     "gatsby-image": "^2.2.33",
-    "gatsby-plugin-material-ui": "^2.1.6",
+    "gatsby-plugin-material-ui": "^2.1.10",
     "gatsby-plugin-mdx": "^1.0.57",
     "gatsby-plugin-sharp": "^2.3.2",
     "gatsby-source-filesystem": "^2.1.38",
     "gatsby-transformer-remark": "^2.6.37",
     "gatsby-transformer-sharp": "^2.3.5",
     "has-scroll-hook": "^1.0.3",
-    "materialui-pagination-component": "^1.1.11",
+    "materialui-pagination-component": "^1.1.12",
     "moment": "^2.24.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.8.0",
@@ -62,5 +66,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "2.3.6"
+  "version": "2.3.7"
 }
